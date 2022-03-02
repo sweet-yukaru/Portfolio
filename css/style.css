@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+html {
+    font-size: 150%;
+}
+.header {
+    width: 100%;
+    background-size :950px;
+    background-image: url(https://www.sozailab.jp/db_img/sozai/76436/7190eab2f9f809f1851d94d58c649cd4.jpg);
+    padding: 10% 280px;
+}
+body {
+    display: inline-block;
+}
+.global-nav {
+    width: 100%;
+    list-style: none;   /*点を消去*/
+    text-align: right;
+}
+.global-nav .nav-item {
+    display:inline-block;  /*横並び*/
+    letter-spacing: 3px;
+
+}
+.global-nav .nav-item a {
+    color: black;
+    text-decoration: none;
+}
