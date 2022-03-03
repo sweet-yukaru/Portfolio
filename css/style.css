@@ -10,6 +10,7 @@ html {
     padding-top: 100px;
 }
 body {
+
     text-decoration: none;
     display: inline-block;
 
@@ -39,17 +40,33 @@ body {
     font-size: 2.3rem;
     color: black;
 }
+.main {
+    background: url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F1052793%2Fe605c23d-8b6d-da40-b9ed-0181beb1c6ce.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=1f27719dc2154e17e8deb2af503cb5d8)fixed;
+}
 .image {
-    width: 300px;
+    width: 440px;
     height: 300px;
-    margin: 0 160px; 
+    margin: 0 80px; 
     margin-bottom: 50px; 
 }
 .title {
     padding: 0 100;
-    padding-left: 250px;
+    padding-left: 230px;
+    color: black;
 }
 .part1 {
+    display: inline-block;
     text-decoration: none;
-    padding: px;
+}
+.part2 {
+    display: inline-block;
+    text-decoration: none;
+}
+.part3 {
+    display: inline-block;
+    text-decoration: none;
+}
+.portforio {
+    display: inline-block;
+    text-decoration: none;
 }
