@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+.header {
+    width: 100%;
+    background-image: url(https://www.sozailab.jp/db_img/sozai/76436/7190eab2f9f809f1851d94d58c649cd4.jpg);
+    background-size: 600px;
+    padding-top: 100px;
+}
+body {
+
+    text-decoration: none;
+    display: inline-block;
+
+}
+.global-nav {  
+    overflow: auto;
+    padding: 0 50px;
+    list-style: none;   /*点を消去*/
+    text-align: right;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+.global-nav .nav-item {
+    display:inline-block;  /*横並び*/
+    letter-spacing: 3px;
+}
+.global-nav .nav-item a {
+    text-decoration: none;
+    color: black;
+
+}
+.hidden {   /*WORKSの文字*/
+    padding-left: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    color: black;
+}
+.main {
+    background: url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F1052793%2Fe605c23d-8b6d-da40-b9ed-0181beb1c6ce.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=1f27719dc2154e17e8deb2af503cb5d8)fixed;
+    background-size: cover;
+}
+.image {
+    width: 440px;
+    height: 300px;
+    margin: 0 80px; 
+    margin-bottom: 50px; 
+}
+.title {
+    padding: 0 100;
+    padding-left: 230px;
+    color: black;
+}
+.part1 {
+    display: inline-block;
+    text-decoration: none;
+}
+.part2 {
+    display: inline-block;
+    text-decoration: none;
+}
+.part3 {
+    display: inline-block;
+    text-decoration: none;
+}
+.portforio {
+    display: inline-block;
+    text-decoration: none;
+}
+.footer {
+    background-image: url(https://www.sozailab.jp/db_img/sozai/76436/7190eab2f9f809f1851d94d58c649cd4.jpg);
+    background-size: 600px;
+    
+    text-align: right;
+}
+.contact {
+    margin: 1px 0 100px;
+    font-size: 30px;
+    color: black;
+}
