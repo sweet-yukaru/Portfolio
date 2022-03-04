@@ -74,11 +74,10 @@ body {
 .footer {
     background-image: url(https://www.sozailab.jp/db_img/sozai/76436/7190eab2f9f809f1851d94d58c649cd4.jpg);
     background-size: 600px;
-    
-    text-align: right;
+    text-align: center;
 }
 .contact {
-    margin: 1px 0 100px;
+    margin: 10px 0 100px;
     font-size: 30px;
     color: black;
 }
