@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+body {
+    padding: 30px;
+    background-color: #f6f7fb;
+    color: #333;
+    font-size: 1.2rem;
+    font-family: "Hiragino KaKu Gothic ProN" , Meiryo, sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #7C5119;
+    text-decoration: none;
+}
+
+.item {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 4px;    /*ボックス間の隙間*/
+    padding: 8px;          /*ボックス内の余白*/
+    border-bottom: 3px solid;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.item .image {
+    display: block;        /*ボックス内の画像を縦に並べる*/
+    width: 100%;
+    height: 109px;
+}
+
+.item .category {
+    margin: 15px 9px 10px;
+    color: #aaa;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', "Hiragino KaKu Gothic ProN" , Meiryo, sans-serif;
+}/*フォント種類変更*/
+
+
+.item .category::before {
+    content: ''; /*空文字*/
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;/*カテゴリー名との間に間隔を取る*/
+    border: 2px solid;
+    border-radius: 50px;
+    vertical-align: -5px;
+}
+
+.item .description {
+    margin: 10px;
+    line-height: 1.5;
+}
+
+.item > a {
+    display: block;
+    margin: -8px -8px -11px;    /*画像を外側まで広げて*/
+    padding: 8px 8px 11px;      /*上で広げた幅にpadding（内側に設ける余白部分)を指定する*/
+    border-radius: inherit;     /*親要素の値を引き継ぐ*/
+    color: #777;
+    transition: all 0.3s;
+}
+.item > a:hover {
+    box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.item-maindish,
+.item-maindish .category::before {
+    display: inline-block;
+    border-color: #FFC0CB;
+}
+.item-appetizer,
+.item-appetizer .category::before {
+    display: inline-block;
+    border-color: #76C047;
+}
+.item-column,
+.item-column .category::before {
+    display: inline-block;
+    border-color: #FFF100;
+}
+.item-breaktime,
+.item-breaktime .category::before {
+    display: inline-block;
+    border-color: #C1EFFF;
+}
+
+.item-m {
+    display: inline-block;
+    width: 364px;
+}
+.item-m .image {
+    height: 146px;
+}
+.item-1 {
+    display: inline-block;
+    width: 732px;
+}
+.item-1 .image {
+    height: 403px;
+}
+
+.header {
+    padding: 25px 0;    /*上下の余白・上辺とロゴの余白*/
+    border-bottom: none;   /*下線なし（none）*/
+    text-align: center;    /*中央寄せ*/
+}
+
+.logo {
+    width: 136px;
+    height: 136px;
+    transition: -webkit-transform 0.3s;    /*いろんなブラウザに対応させるため*/
+    transition: transform 0.3s;            /*画像の変化を0.3秒かける*/
+}              
+.logo:hover {
+    -webkit-transform: rotate(360deg);   /*いろんなブラウザに対応させるため*/
+    transform: rotate(360deg);           /*画像の回転*/
+}
+
+.nav {
+    margin: 35px auto 10px;
+}
+.nav-item {
+    margin-top: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.nav-item a {
+    display: inline-block;   /*テキストと同じ横幅にするため*/
+}
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin: 6px auto 0;      /*リンクテキストとの間隔を開ける＋中央寄せ*/
+    border-bottom: 1px solid #7C5119;     /*線のスタイル*/
+    transition: width 0.3s ease-in-out;     /*ease-in-outはアニメーションの変化の仕方を指定する関数のキーワド。線が伸びる始めと終わりで伸びる速度を緩められる*/
+}
+.nav-item a:hover::after {
+    width: 100%;
+}    /*アニメーションが動くための指定*/
+
+
+/*ホバーしたときのみ表示させる*/
+.item {
+    overflow: hidden;
+}
+.item image {
+    position: relative;
+}
+
+/*画像部分を暗くする*/
+.item > a::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    display: block;
+    height: 109px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.item > a:hover::before {
+    opacity: 1;
+}
+
+.item-m > a::before {
+    height: 146px;
+}
+.item-1 > a::before {
+    height: 403px;
+}
+
+/*MOREの表示*/
+.item > a::after {
+    content: 'MORE';
+    position: absolute;
+    top: 43.5px;
+    left: 150%;
+    display: block;
+    width: 100px;
+    margin-left: -50px;
+    padding: 8px;
+    border: 3px solid #fff;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', "Hiragino KaKu Gothic ProN" , Meiryo, sans-serif;
+    opacity: 0;
+    transition: all 0.3s sase-in out;
+}
+.item > a:hover::after {
+    left: 50%;
+    opacity: 1;
+}
+.item-m > a::after {
+    top: 62px;
+}
+.item-1 > a::after {
+    top: 190.5px;
+}

@@ -7,7 +7,7 @@ html {
     width: 100%;
     background-image: url(https://www.sozailab.jp/db_img/sozai/76436/7190eab2f9f809f1851d94d58c649cd4.jpg);
     background-size: 600px;
-    padding-top: 100px;
+    height: 100px;
 }
 body {
 
@@ -15,9 +15,15 @@ body {
     display: inline-block;
 
 }
+.nav-title {
+    text-align: center;
+    text-shadow: 0 1px 5px olive;
+    list-style: none;
+    font-size: 30px;
+}
 .global-nav {  
     overflow: auto;
-    padding: 0 50px;
+    padding: 10px 50px 0 50px;
     list-style: none;   /*点を消去*/
     text-align: right;
     font-size: 15px;
@@ -29,6 +35,7 @@ body {
     letter-spacing: 3px;
 }
 .global-nav .nav-item a {
+    margin-left: 15px;
     text-decoration: none;
     color: black;
 
@@ -74,10 +81,11 @@ body {
 .footer {
     background-image: url(https://www.sozailab.jp/db_img/sozai/76436/7190eab2f9f809f1851d94d58c649cd4.jpg);
     background-size: 600px;
+    height: 100px;
     text-align: center;
 }
 .contact {
-    margin: 10px 0 100px;
+    margin: 10px 0 10px;
     font-size: 30px;
     color: black;
 }
