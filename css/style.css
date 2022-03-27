@@ -48,17 +48,69 @@ body {
     color: black;
 }
 .main {
-    background: url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F1052793%2Fe605c23d-8b6d-da40-b9ed-0181beb1c6ce.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=1f27719dc2154e17e8deb2af503cb5d8)fixed;
+    /*background: url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F1052793%2Fe605c23d-8b6d-da40-b9ed-0181beb1c6ce.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=1f27719dc2154e17e8deb2af503cb5d8)fixed;*/
     background-size: cover;
 }
+
+
+  
 .image {
+    transition: 0.4s ease;
     width: 440px;
     height: 300px;
     margin: 0 80px; 
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
+    margin-top: -200px; 
+    position: relative; 
 }
+.image:hover {
+    opacity: 0.2;
+}
+.image:hover {
+    filter: brightness(30%);
+    position: relative;
+}
+.text-box {
+    font-size: 15px;
+    padding-left: 130px;
+    position: relative;
+    top: 50px;
+    color: black;
+    font-weight: bold;
+}
+.text-box1 {
+    font-size: 15px;
+    padding-left: 130px;
+    padding-top: 20px;
+    position: relative;
+    bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+.text-box2 {
+    font-size: 15px;
+    padding-left: 130px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+/*.part1::after {
+     position: absolute;
+     left: 250px;
+     content: "part1";
+     color: red;
+     font-size: 50px;
+}*/
+.text-box:hover {
+    opacity: 1;
+}
+
+
 .title {
-    padding: 0 100;
+    padding: 0 100px;
     padding-left: 230px;
     color: black;
 }
@@ -89,3 +141,6 @@ body {
     font-size: 30px;
     color: black;
 }
+
+
+

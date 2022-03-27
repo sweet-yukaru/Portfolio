@@ -4,8 +4,23 @@
         <meta charset="UTF-8">
         <title>ポートフォリオサイト</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="./bubbly-bg.js"></script>
+        <script>
+            bubbly({
+              blur:15, //ぼかし
+              colorStart: '#194167', //背景グラデーション始まりの色
+              colorStop: '#112144', //背景グラデーション終わりの色
+              radiusFunc:() => 5 + Math.random() * 15, //大きさ
+              angleFunc:() => -Math.PI / 2, //向き
+              velocityFunc:() => Math.random() * 7.5, //速さ
+              bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`, //色彩(hsla)
+              bubbles:350, //個数
+              compose: 'source-over', //色ブレンド
+            });
+            </script>
     </head>
     <body>
+        
         <header class="header"> 
             <nav class="global-nav">
                 <ul>
@@ -15,28 +30,53 @@
                     <li class="nav-item"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            </div>
         </header>
         <main class="main">
         <h1 class="hidden">WORKS</h1>
-        <div class="clearfix">
         <a href="HTML-CSS/part1/index.html" class="part1">
             <h3 class="title">スタンダードレイアウト</h3>
-            <img class="image" src="./images/part1.png" alt="part1">
-            </a>
+            <div class="text-box">
+                <p>part1ではスタンダードレイアウトを制作しました。<br>
+                    こちらは私が初めて制作したサイトで<br>
+                    分からないこと上手くいかないことばかりでした。<br>
+                    難しかったことは全体のバランスが<br>
+                    教本に書いてあるものだと崩れてしまい<br>
+                    どこが原因なのかを探すのに苦労しました。<br>
+                    始めて作るため、コードが増えていくたびに<br>
+                    頭の中で整理しながら見ていくのが大変でした。</p>
+
+            </div>
+            <img class="image" src="./images/part1.png" alt="part1" ></a>
+
             <a href="HTML-CSS/part2/index.html" class="part2">
                 <h3 class="title">グリットレイアウト</h3>
+                <div class="text-box1">
+                    <p>part2ではグリットレイアウトを制作しました。<br>
+                        このパートではmasonryを使用し<br>
+                        沢山ある画像をレンガ上に並べるようにしました。<br>
+                        難しかったことは画像が沢山ある為<br>
+                        文字と重なってしまうことが多々ありました。<br>
+                        HOME上の大きな丸にかざすと動くようにtransformで<br>
+                        指定しました。</p>
+                </div>
                 <img class="image" src="./images/part2.png" alt="part2" >
             </a>
             <a href="HTML-CSS/part3/index.html" class="part3">
                 <h3 class="title">シングルページレイアウト</h3>
+                <div class="text-box2">
+                    <p>このパートではスマートフォン対応にしました。<br>
+                       ヘッダー部分のLEARN MOREと<br>
+                       SEND MESSAGEのボタンはhrefに<br>
+                       aboutで要素を指定し<br>
+                       idで飛ばす先を指定してあります。</p>
+                </div>
                 <img class="image" src="./images/part3.png" alt="part3">
             </a>
             <a href="#" class="portforio">
                 <h3 class="title">ポートフォリオサイト</h3>
                 <img class="image" src="./images/ポートフォリオサイト.png" alt="part3">
             </a>
-        </div>
+            </div>
         </main>
         <footer class="footer">
             <h2 class="contact" id="contact">contact</h2>
