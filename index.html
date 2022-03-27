@@ -4,23 +4,19 @@
         <meta charset="UTF-8">
         <title>ポートフォリオサイト</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="./bubbly-bg.js"></script>
-        <script>
-            bubbly({
-              blur:15, //ぼかし
-              colorStart: '#194167', //背景グラデーション始まりの色
-              colorStop: '#112144', //背景グラデーション終わりの色
-              radiusFunc:() => 5 + Math.random() * 15, //大きさ
-              angleFunc:() => -Math.PI / 2, //向き
-              velocityFunc:() => Math.random() * 7.5, //速さ
-              bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`, //色彩(hsla)
-              bubbles:350, //個数
-              compose: 'source-over', //色ブレンド
-            });
-            </script>
     </head>
     <body>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+        <script>
+          bubbly({
+            colorStart: 'beige',   /*背景のグラデーションの始まり*/
+            colorStop: 'lightpink', /*グラデーションの終わり*/
+            blur:1,  /*ぼかし*/
+            compose: 'source-over',
+            bubbleFunc:() => `hsla(${Math.random() * 100}, 150%, 50%, .2)`
+          });
+        </script>
+
         <header class="header"> 
             <nav class="global-nav">
                 <ul>
@@ -65,10 +61,11 @@
                 <h3 class="title">シングルページレイアウト</h3>
                 <div class="text-box2">
                     <p>このパートではスマートフォン対応にしました。<br>
-                       ヘッダー部分のLEARN MOREと<br>
-                       SEND MESSAGEのボタンはhrefに<br>
-                       aboutで要素を指定し<br>
-                       idで飛ばす先を指定してあります。</p>
+                       ヘッダー部分のSEND MESSAGEのボタンはhrefに<br>
+                       aboutで要素を指定しidで飛ばす先を<br>
+                       指定してあります。<br>
+                       背景画像は でスクロール時に<br>
+                       動かないようにしてあります。</p>
                 </div>
                 <img class="image" src="./images/part3.png" alt="part3">
             </a>
@@ -82,5 +79,19 @@
             <h2 class="contact" id="contact">contact</h2>
             <h2>📪sweets.love1117@gmail.com</h2>
         </footer>
+        <!--<script src="./bubbly-bg.js"></script>
+        <script>
+            bubbly({
+              blur:15, //ぼかし
+              colorStart: '#194167', //背景グラデーション始まりの色
+              colorStop: '#112144', //背景グラデーション終わりの色
+              radiusFunc:() => 5 + Math.random() * 15, //大きさ
+              angleFunc:() => -Math.PI / 2, //向き
+              velocityFunc:() => Math.random() * 7.5, //速さ
+              bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`, //色彩(hsla)
+              bubbles:350, //個数
+              compose: 'source-over', //色ブレンド
+            });
+            </script>-->
     </body>
 </html>
