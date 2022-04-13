@@ -4,17 +4,18 @@
 html {
     font-size: 62.5%;
 }
-.header {
-    width: 100%;
-    border-bottom: 1px solid;
-    height: 120px;
-}
 body {
+    -webkit-text-size-adjust: 100%;
     text-decoration: none;
     display: inline-block;
 }
-.nav-title {
-    text-align: center;
+.header {
+    width: 1260px;
+    border-bottom: 1px solid;
+    height: 120px;
+}
+.nav-title {         /*ボタン部分*/
+    text-align: center;      
     text-shadow: 0 1px 5px olive;
     list-style: none;
     font-size: 30px;
@@ -38,6 +39,17 @@ body {
     color: black;
 
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-image {
+    width: 50%;
+    height: 400px;
+}
+
 .hidden {   /*WORKSの文字*/
     padding-left: 10px;
     text-align: center;
@@ -46,8 +58,39 @@ body {
     color: black;
 }
 .main {
-    /*background: url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F1052793%2Fe605c23d-8b6d-da40-b9ed-0181beb1c6ce.gif?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&s=1f27719dc2154e17e8deb2af503cb5d8)fixed;*/
-    background-size: cover;
+    width: 100%;
+}
+.title {
+    padding-left: 160px;
+    color: black;
+}
+.image {
+    transition: 0.4s ease;
+    width: 440px;
+    height: 300px;
+    padding-right: 50px;
+    position: absolute; 
+    z-index: 2;
+}
+.image:hover {
+    opacity: 0.2;
+}
+.image:hover {
+    filter: brightness(30%);
+    position: relative;
+}
+.text-box {
+    font-size: 15px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/*
+
+.main {
+   
 }
 
 
@@ -68,14 +111,7 @@ body {
     filter: brightness(30%);
     position: relative;
 }
-.text-box {
-    font-size: 15px;
-    padding-left: 130px;
-    position: relative;
-    top: 15px;
-    color: black;
-    font-weight: bold;
-}
+
 .text-box1 {
     font-size: 15px;
     padding-left: 130px;
@@ -139,7 +175,12 @@ body {
     margin: 10px 0 10px;
     font-size: 30px;
     color: black;
+}*/
+
+@media (max-width: 599px) {
+    .global-nav .nav-item a {
+       text-align:  center;
+       padding-right: 45px;
+   }
+   
 }
-
-
-

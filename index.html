@@ -8,8 +8,8 @@
     </head>
     <body>
         
-        <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
-        <script>
+       <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+        <script class="js">
           bubbly({
             colorStart: 'beige',   /*背景のグラデーションの始まり*/
             colorStop: 'lightpink', /*グラデーションの終わり*/
@@ -29,7 +29,74 @@
                 </ul>
             </nav>
         </header>
+        <h1 class="hidden">WORKS</h1>
         <main class="main">
+            <div class="container">
+                <div class="wrapper-image">
+                    <a href="HTML-CSS/part1/index.html" class="part1">
+                        <h3 class="title">スタンダードレイアウト</h3>
+                        <div class="text-box">
+                            <p>part1ではスタンダードレイアウトを制作しました。<br>
+                                こちらは私が初めて制作したサイトで<br>
+                                分からないこと上手くいかないことばかりでした。<br>
+                                難しかったことは全体のバランスが<br>
+                                教本に書いてあるものだと崩れてしまい<br>
+                                どこが原因なのかを探すのに苦労しました。<br>
+                                始めて作るため、コードが増えていくたびに<br>
+                                頭の中で整理しながら見ていくのが大変でした。</p>
+                        </div>
+                        <img class="image" src="./images/part1.png" alt="part1" >
+                    </a>
+                </div>
+                <div class="wrapper-image">
+                    <a href="HTML-CSS/part2/index.html" class="part2">
+                        <h3 class="title">グリットレイアウト</h3>
+                        <div class="text-box">
+                            <p>part2ではグリットレイアウトを制作しました。<br>
+                                このパートではmasonryを使用し<br>
+                                沢山ある画像をレンガ上に並べるようにしました。<br>
+                                難しかったことは画像が沢山ある為<br>
+                                文字と重なってしまうことが多々ありました。<br>
+                                HOME上の大きな丸にかざすと動くようにtransformで<br>
+                                指定しました。</p>
+                        </div>
+                        <img class="image" src="./images/part2.png" alt="part2" >
+                    </a>
+                </div>
+                <div class="wrapper-image">
+                    <a href="HTML-CSS/part3/index.html" class="part3">
+                        <h3 class="title">シングルページレイアウト</h3>
+                        <div class="text-box">
+                            <p>このパートではスマートフォン対応にしました。<br>
+                               ヘッダー部分のSEND MESSAGEのボタンはhrefに<br>
+                               aboutで要素を指定しidで飛ばす先を<br>
+                               指定してあります。<br>
+                               背景画像は でスクロール時に<br>
+                               動かないようにしてあります。</p>
+                        </div>
+                        <img class="image" src="./images/part3.png" alt="part3">
+                    </a>
+                </div>
+                <div class="wrapper-image">
+                    <a href="#" class="portforio">
+                        <h3 class="title">ポートフォリオサイト</h3>
+                        <div class="text-box">
+                            <p>このサイトは自分で制作した作品になります。<br>
+                               part1~part3の内容を参考に制作しました。<br>
+                               背景画像はjavascriptを使用してグラデーションの色<br>
+                               水玉のぼかし具合などを設定しました。<br>
+                               サイトの画像をそれぞれホバーすると文字が<br>
+                               見えるようにし、そのpartでの内容や感想を記載しました。</p>
+                        </div>
+                        <img class="image" src="./images/ポートフォリオサイト.png" alt="part3">
+                    </a>
+                </div>
+            </div>
+            
+
+        </main>
+
+        <!--<main class="main">
         <h1 class="hidden">WORKS</h1>
         <a href="HTML-CSS/part1/index.html" class="part1">
             <h3 class="title">スタンダードレイアウト</h3>
@@ -88,6 +155,6 @@
         <footer class="footer">
             <h2 class="contact" id="contact">contact</h2>
             <h2>📪sweets.love1117@gmail.com</h2>
-        </footer>
+        </footer>-->
     </body>
 </html>
