@@ -46,8 +46,12 @@ body {
     height: 100%;
 }
 .wrapper-image {
+    position: relative;  /*画像と文を移動する為*/
+    right: 70px;
     width: 50%;
     height: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .hidden {   /*WORKSの文字*/
@@ -68,23 +72,25 @@ body {
     transition: 0.4s ease;
     width: 440px;
     height: 300px;
-    padding-right: 50px;
-    position: absolute; 
-    z-index: 2;
+    position: absolute;
 }
-.image:hover {
+.image:hover{
     opacity: 0.2;
-}
-.image:hover {
     filter: brightness(30%);
-    position: relative;
+}
+
+.image:hover + .text-box{
+    visibility: visible;
+}
+.text-box {
+    pointer-events: none;  /*ホバー時のバグを修正*/
 }
 .text-box {
     font-size: 15px;
     position: absolute;
     color: black;
     font-weight: bold;
-    z-index: 1;
+    visibility: hidden;
 }
 
 /*
