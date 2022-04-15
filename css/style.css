@@ -7,10 +7,14 @@ html {
 body {
     -webkit-text-size-adjust: 100%;
     text-decoration: none;
-    display: inline-block;
+    
 }
+
+
+@media only screen and (min-width: 1200px) {
+
 .header {
-    width: 1260px;
+    width: 100%;
     border-bottom: 1px solid;
     height: 120px;
 }
@@ -102,12 +106,120 @@ body {
     margin: 10px 0 10px;
     font-size: 30px;
     color: black;
+} 
 }
 
 @media (max-width: 599px) {
+    /*.header {
+        width: 420px;
+    }
     .global-nav .nav-item a {
-       text-align:  center;
-       padding-right: 45px;
+        margin: 0 10px;
+        letter-spacing: 2px;
    }
-   
+   .container {
+       display: inline-block;
+       width: 100%;
+       padding: 0;
+   }
+   .wrapper-image {
+       display: block;
+   }
+   .title {
+       white-space: nowrap;  二列になるのを防ぐ
+       font-size: 15px;
+      
+   }
+   .text-box {
+       display: none;
+   }
+   .image {
+       width: 410px;
+       left: 80px;
+   }
+   */
+   .header {
+    width: 100%;
+    border-bottom: 1px solid;
+    height: 120px;
+   }
+
+   .nav-title {         /*ボタン部分*/
+    text-align: center; 
+    padding-right: 50px;     
+    text-shadow: 0 1px 5px olive;
+    list-style: none;
+    font-size: 30px;
+   }
+   .global-nav {  
+    white-space: nowrap;
+    overflow: auto;
+    padding: 10px 50px 0 50px;
+    list-style: none;   /*点を消去*/
+    font-size: 15px;
+   }
+   .global-nav .nav-item {
+    display:inline-block;  /*横並び*/
+   }
+   .global-nav .nav-item a {  /*ボタン部分*/
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+
+   }
+   .wrapper-image {
+    position: relative;  /*画像と文を移動する為*/
+    right: 70px;
+    height: 400px;
+   }
+
+   .hidden {   /*WORKSの文字*/
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    color: black;
+   }
+   .main {
+    width: 100%;
+   }
+   .title {
+    padding-left: 200px;
+    color: black;
+   }
+   .image {
+    transition: 0.4s ease;
+    width: 435px;
+    height: 300px;
+    left: 40px;
+    position: absolute;
+   }
+   .image:hover{
+    opacity: 0.2;
+    filter: brightness(30%);
+   }
+
+   .image:hover + .text-box{
+    visibility: visible;
+   }
+   .text-box {
+    pointer-events: none;  /*ホバー時のバグを修正*/
+   }
+   .text-box {
+    font-size: 15px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    visibility: hidden;
+   }
+
+   .footer {
+    border-top: 1px solid;
+    height: 100px;
+    text-align: center;
+   }
+   .contact {
+    margin: 10px 0 10px;
+    font-size: 30px;
+    color: black;
+   }
 }
