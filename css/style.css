@@ -144,17 +144,15 @@ body {
     height: 120px;
    }
 
-   .nav-title {         /*ボタン部分*/
-    text-align: center; 
-    padding-right: 50px;     
+   .nav-title {         /*タイトル部分*/
+    text-align: center;      
     text-shadow: 0 1px 5px olive;
     list-style: none;
     font-size: 30px;
    }
    .global-nav {  
     white-space: nowrap;
-    overflow: auto;
-    padding: 10px 50px 0 50px;
+    padding: 10px 50px 0 30px;
     list-style: none;   /*点を消去*/
     font-size: 15px;
    }
@@ -168,9 +166,8 @@ body {
 
    }
    .wrapper-image {
-    position: relative;  /*画像と文を移動する為*/
-    right: 70px;
     height: 400px;
+    width: 100%;
    }
 
    .hidden {   /*WORKSの文字*/
@@ -179,19 +176,15 @@ body {
     font-size: 2.3rem;
     color: black;
    }
-   .main {
-    width: 100%;
-   }
+   
    .title {
-    padding-left: 200px;
     color: black;
+    text-align: center;
    }
    .image {
     transition: 0.4s ease;
-    width: 435px;
+    width: 100%;
     height: 300px;
-    left: 40px;
-    position: absolute;
    }
    .image:hover{
     opacity: 0.2;
@@ -214,11 +207,10 @@ body {
 
    .footer {
     border-top: 1px solid;
-    height: 100px;
     text-align: center;
    }
    .contact {
-    margin: 10px 0 10px;
+    padding: 0;
     font-size: 30px;
     color: black;
    }
