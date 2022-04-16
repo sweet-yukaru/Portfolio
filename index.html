@@ -49,7 +49,7 @@
                     </a>
                 </div>
                 <div class="wrapper-image">
-                    <a href="HTML-CSS/part2/index.html" class="part2">
+                    <a href="HTML-CSS/part2/index.html">
                         <h3 class="title">グリットレイアウト</h3>
                         <img class="image" src="./images/part2.png" alt="part2" >
                         <div class="text-box">
@@ -64,7 +64,7 @@
                     </a>
                 </div>
                 <div class="wrapper-image">
-                    <a href="HTML-CSS/part3/index.html" class="part3">
+                    <a href="HTML-CSS/part3/index.html">
                         <h3 class="title">シングルページレイアウト</h3>
                         <img class="image" src="./images/part3.png" alt="part3">
                         <div class="text-box">
@@ -84,13 +84,20 @@
                         <div class="text-box">
                             <p>このサイトは自分で制作した作品になります。<br>
                                part1~part3の内容を参考に制作しました。<br>
-                               背景画像はjavascriptを使用してグラデーションの色<br>
-                               水玉のぼかし具合などを設定しました。<br>
-                               サイトの画像をそれぞれホバー時にフィルターをかけ文字が<br>
-                               見えるようにし、そのpartでの内容や感想を記載しました。<br>
-                               文字にホバーをかけるだけだとバグが出てしまい、<br>
-                               文字部分がチカチカしていました。その問題を解消するために<br>
-                               文字部分の要素にpointer-events: none;を追加しマウス時の効果を消去することで解消されました。</p>
+                               *この作品の内容について*<br>
+                               1.cssは共通部分、PC用、スマホ用と3つに分けて記述しました。<br>
+                               2.containerで幅を(100%)設定することでページ全体に影響を受けずエリアのみで行えます。<br>
+                               3.imageとtext-boxをposition: absolute;で指定し、文字と画像の2つの要素が重なるようにしました。<br>
+                               4.画像はhover時にfilterがかかるよう指定しました。<br>
+                                 text-boxにvisibility: hidden;で文字の要素を非表示にし、ホバーしたときにvisibility: visible;が
+                                 適用され表示するように指定しました。<br>
+                               5.4番の内容を記述したことにより、文字にホバーをするとバグが発生してしまいました。<br>
+                                 修正する為に、text-boxのみにpointer-events: none;を指定することでマウス操作が全て無効になるので
+                                 バグが修正出来ました。<br>
+                               6.wrapper-imageにdisplay: flex;を指定し、横並びにさせ一つのボックスを50%とし、
+                               さらにflex-wrap: wrap;を親要素に指定することで、子要素のボックスが親要素の幅を超えたときに
+                               折り返すように指定しました。これにより2個のボックスのみが横に並ぶようになっています。<br>
+                              <!--文をメモとり、ここにはさらに短くする-->
                         </div>
                     </a>
                 </div>
