@@ -1,37 +1,43 @@
 @charset "UTF-8";
-
-
 html {
     font-size: 62.5%;
 }
 body {
     -webkit-text-size-adjust: 100%;
     text-decoration: none;
-    
 }
-
-
-@media only screen and (min-width: 1200px) {
-
 .header {
     width: 100%;
     border-bottom: 1px solid;
     height: 120px;
 }
-.nav-title {         /*ボタン部分*/
+.nav-title {         /*タイトル部分*/
     text-align: center;      
     text-shadow: 0 1px 5px olive;
     list-style: none;
     font-size: 30px;
 }
+.text-box {
+    font-size: 15px;
+    position: absolute; /*文字と画像を重ねるため*/
+    color: black;
+    font-weight: bold;
+    visibility: hidden;
+}
+.contact {
+    padding: 0;
+    font-size: 30px;
+    color: black;
+}
+
+@media only screen and (min-width: 1200px) {
 .global-nav {  
     overflow: auto;
     padding: 10px 50px 0 50px;
     list-style: none;   /*点を消去*/
     text-align: right;
     font-size: 15px;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .global-nav .nav-item {
     display:inline-block;  /*横並び*/
@@ -41,7 +47,6 @@ body {
     margin-left: 15px;
     text-decoration: none;
     color: black;
-
 }
 .container {
     display: flex;
@@ -57,7 +62,6 @@ body {
     display: flex;  /*横並び*/
     justify-content: center; /*中央寄せ*/
 }
-
 .hidden {   /*WORKSの文字*/
     padding-left: 10px;
     text-align: center;
@@ -82,74 +86,20 @@ body {
     opacity: 0.2;
     filter: brightness(30%);
 }
-
 .image:hover + .text-box{
     visibility: visible;
 }
 .text-box {
     pointer-events: none;  /*ホバー時のバグを修正*/
 }
-.text-box {
-    font-size: 15px;
-    position: absolute;
-    color: black;
-    font-weight: bold;
-    visibility: hidden;
-}
-
 .footer {
     border-top: 1px solid;
     height: 100px;
     text-align: center;
 }
-.contact {
-    margin: 10px 0 10px;
-    font-size: 30px;
-    color: black;
-} 
 }
 
 @media (max-width: 599px) {
-    /*.header {
-        width: 420px;
-    }
-    .global-nav .nav-item a {
-        margin: 0 10px;
-        letter-spacing: 2px;
-   }
-   .container {
-       display: inline-block;
-       width: 100%;
-       padding: 0;
-   }
-   .wrapper-image {
-       display: block;
-   }
-   .title {
-       white-space: nowrap;  二列になるのを防ぐ
-       font-size: 15px;
-      
-   }
-   .text-box {
-       display: none;
-   }
-   .image {
-       width: 410px;
-       left: 80px;
-   }
-   */
-   .header {
-    width: 100%;
-    border-bottom: 1px solid;
-    height: 120px;
-   }
-
-   .nav-title {         /*タイトル部分*/
-    text-align: center;      
-    text-shadow: 0 1px 5px olive;
-    list-style: none;
-    font-size: 30px;
-   }
    .global-nav {  
     white-space: nowrap;
     padding: 10px 50px 0 30px;
@@ -186,32 +136,10 @@ body {
     width: 100%;
     height: 300px;
    }
-   .image:hover{
-    opacity: 0.2;
-    filter: brightness(30%);
-   }
-
-   .image:hover + .text-box{
-    visibility: visible;
-   }
-   .text-box {
-    pointer-events: none;  /*ホバー時のバグを修正*/
-   }
-   .text-box {
-    font-size: 15px;
-    position: absolute;
-    color: black;
-    font-weight: bold;
-    visibility: hidden;
-   }
-
+   
    .footer {
     border-top: 1px solid;
     text-align: center;
    }
-   .contact {
-    padding: 0;
-    font-size: 30px;
-    color: black;
-   }
+  
 }
